@@ -89,7 +89,7 @@
             android:layout_marginStart="12dp"
             android:layout_marginEnd="8dp"
             android:layout_weight="1"
-            android:onClick="showMoviesToast"
+            android:onClick="loadMovies"
             android:text="@string/movies" />
 
         <Button

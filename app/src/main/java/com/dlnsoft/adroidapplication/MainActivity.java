@@ -2,6 +2,7 @@ package com.dlnsoft.adroidapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -24,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
         t.show();
     }
 
-    public void showMoviesToast(View view) {
-        Toast t = Toast.makeText(this, "Movies", Toast.LENGTH_SHORT);
-        t.show();
+    public void loadMovies(View view) {
+        Intent intent = new Intent(this, Movies.class);
+        startActivity(intent);
     }
 
     public void showMusicToast(View view) {

@@ -2,14 +2,29 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dlnsoft.adroidapplication">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Adroid Application"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AdroidApplication">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MovieDetails"
+            android:parentActivityName=".Movies"
+            android:label="@string/title_activity_movie_details">
+        </activity>
+        <activity
+            android:name=".Movies"
+            android:parentActivityName=".MainActivity"
+            android:label="Movies">
+        </activity>
+        <activity android:name=".MainActivity"
+            android:label="@string/home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

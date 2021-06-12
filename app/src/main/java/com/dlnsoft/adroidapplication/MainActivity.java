@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
         t.show();
     }
 
-    public void showTrafficToast(View view) {
-        Toast t = Toast.makeText(this, "Traffic", Toast.LENGTH_SHORT);
-        t.show();
+    public void loadTraffic(View view) {
+        Intent intent = new Intent(this, TrafficCameras.class);
+        startActivity(intent);
     }
 }

@@ -5,7 +5,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -14,16 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AdroidApplication">
         <activity
+            android:name=".TrafficCameras"
+            android:label="@string/traffic_cams"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".MovieDetails"
-            android:parentActivityName=".Movies"
-            android:label="@string/title_activity_movie_details">
-        </activity>
+            android:label="@string/title_activity_movie_details"
+            android:parentActivityName=".Movies" />
         <activity
             android:name=".Movies"
-            android:parentActivityName=".MainActivity"
-            android:label="Movies">
-        </activity>
-        <activity android:name=".MainActivity"
+            android:label="@string/movies"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
             android:label="@string/home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

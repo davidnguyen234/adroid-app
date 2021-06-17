@@ -15,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void showCitiesToast(View view) {
-        Toast t = Toast.makeText(this, "Cities", Toast.LENGTH_SHORT);
-        t.show();
+    public void loadLocation(View view) {
+        Intent intent = new Intent(this, TrafficCameraMap.class);
+        startActivity(intent);
     }
 
     public void showFoodToast(View view) {

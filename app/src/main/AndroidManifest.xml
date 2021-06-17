@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AdroidApplication">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="API KEY HERE" />
+        <activity
+            android:name=".TrafficCameraMap"
+            android:label="@string/traffic_cams_map"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".TrafficCameras"
             android:label="@string/traffic_cams"

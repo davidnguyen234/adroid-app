@@ -13,6 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AdroidApplication">
+        <activity
+            android:name=".Firebase"
+            android:label="@string/firebase"
+            android:parentActivityName=".MainActivity"/>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="API KEY HERE" />

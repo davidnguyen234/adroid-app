@@ -14,5 +14,9 @@
     <string name="title_activity_movie_details">Movie Details</string>
     <string name="traffic_cams">Traffic Cameras</string>
     <string name="traffic_cams_map">Traffic Cam Map</string>
-
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="firebase">Firebase</string>
 </resources>
